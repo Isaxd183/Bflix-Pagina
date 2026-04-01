@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="BFLIX — Tu portal de entretenimiento sin límites. Repositorios Movian, plugins de streaming, anime, torrents y herramientas multimedia."/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BFLIX — Tu portal de entretenimiento sin límites. Repositorios Movian, plugins de streaming, anime, torrents y herramientas multimedia.">
   <title>Bflix</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Rajdhani:wght@400;500;600;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#0a0a0f;--bg2:#0f0f18;--card:#12121e;--card2:#16162a;
@@ -185,6 +183,8 @@
     .link-card.social-fb::before{background:linear-gradient(90deg,#1877f2,#42a5f5)}
     .link-card.tool-m3u::before{background:linear-gradient(90deg,var(--purple),var(--cyan))}
     .link-card.tool-html::before{background:linear-gradient(90deg,var(--accent2),var(--gold))}
+    .link-card.tool-bflix::before{background:linear-gradient(90deg,var(--accent1),var(--cyan))}
+    .link-card.tool-bflix:hover{border-color:rgba(229,9,20,.45);box-shadow:0 8px 28px rgba(229,9,20,.14)}
     .link-card:hover{transform:translateY(-2px);border-color:rgba(229,9,20,.4);box-shadow:0 8px 28px rgba(229,9,20,.1)}
     .link-card.social-fb:hover{border-color:rgba(24,119,242,.45);box-shadow:0 8px 28px rgba(24,119,242,.12)}
     .link-card.tool-m3u:hover{border-color:rgba(123,47,255,.45);box-shadow:0 8px 28px rgba(123,47,255,.14)}
@@ -281,7 +281,7 @@
       .modal-key{width:120px}
     }
   </style>
-</head>
+<style id="sb_cln_style">ins[class*="adsbygoogle"],ins[class*="adsbyadop"],[id*="div-gpt-ad"],amp-ad{display:none !important;}</style><style id="sb_dark_style">img{-webkit-filter:brightness(70%);}</style></head>
 <body>
 
 <header>
@@ -304,10 +304,10 @@
 <div class="divider"></div>
 
 <section class="section" id="movian">
-  <p class="section-tag anim anim-1">Movian / Showtime</p>
-  <h2 class="section-title anim anim-2">Repositorios <span>Movian</span></h2>
-  <p class="section-desc anim anim-3">Instala los repositorios oficiales en tu reproductor Movian (Showtime) y accede a todos los plugins de la comunidad.</p>
-  <div class="repo-grid anim anim-4">
+  <p class="section-tag anim anim-1 visible">Movian / Showtime</p>
+  <h2 class="section-title anim anim-2 visible">Repositorios <span>Movian</span></h2>
+  <p class="section-desc anim anim-3 visible">Instala los repositorios oficiales en tu reproductor Movian (Showtime) y accede a todos los plugins de la comunidad.</p>
+  <div class="repo-grid anim anim-4 visible">
     <div class="repo-card" id="card-isax">
       <div class="repo-badge">Repositorio Oficial</div>
       <div class="repo-author">Isaxdm7 Repository</div>
@@ -316,7 +316,7 @@
       </div>
       <p class="repo-desc">Repositorio de plugins mantenido por <strong>Isaxdm7</strong>. Incluye una amplia colección de plugins de streaming, torrents, anime y multimedia compatibles con Movian / Showtime.</p>
       <p class="plugin-label">Plugins incluidos — toca uno para ver detalles</p>
-      <div class="plugin-list" id="list-isax"></div>
+      <div class="plugin-list" id="list-isax"><span class="plugin-tag">StreamNet</span><span class="plugin-tag">141JAV</span><span class="plugin-tag">AnimeIDHentai</span><span class="plugin-tag">Bflix Directories</span><span class="plugin-tag">Bflix The Pirate Bay</span><span class="plugin-tag">CineCalidad</span><span class="plugin-tag">EliteTorrent</span><span class="plugin-tag">GranTorrent</span><span class="plugin-tag">Latanime</span><span class="plugin-tag">MoviesDVDR</span><span class="plugin-tag">nekoBT</span><span class="plugin-tag">Nyaa</span><span class="plugin-tag">PediaTorrent</span><span class="plugin-tag">PS3Flix - El Gran Rey</span><span class="plugin-tag">Rave Peliculas</span><span class="plugin-tag">Shana Project</span><span class="plugin-tag">Subtitles Pro</span><span class="plugin-tag">XVFLIX</span></div>
     </div>
     <div class="repo-card alt" id="card-bflix">
       <div class="repo-badge">Repositorio Oficial</div>
@@ -326,7 +326,7 @@
       </div>
       <p class="repo-desc">Repositorio oficial del <strong>Bflix Team</strong>. Contiene los plugins principales de la plataforma Bflix, diseñados para ofrecer la mejor experiencia de reproducción multimedia en Movian / Showtime.</p>
       <p class="plugin-label">Plugins incluidos — toca uno para ver detalles</p>
-      <div class="plugin-list" id="list-bflix"></div>
+      <div class="plugin-list" id="list-bflix"><span class="plugin-tag">MULTIPLATAFORMA TV</span><span class="plugin-tag">Bflix+</span><span class="plugin-tag">Bflix</span></div>
     </div>
   </div>
 </section>
@@ -339,7 +339,7 @@
   <div class="link-grid anim anim-4">
     <a class="link-card" href="https://apps.movian.eu/" target="_blank" rel="noopener">
       <div class="link-card-icon">
-        <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_240/https%3A%2F%2Fdashboard.snapcraft.io%2Fsite_media%2Fappmedia%2F2019%2F01%2Fhtslogo_256x256.png" alt="Movian" loading="lazy" width="50" height="50"/>
+        <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_240/https%3A%2F%2Fdashboard.snapcraft.io%2Fsite_media%2Fappmedia%2F2019%2F01%2Fhtslogo_256x256.png" alt="Movian" loading="lazy" width="50" height="50">
       </div>
       <div class="link-card-info">
         <div class="link-card-title">Movian</div>
@@ -372,6 +372,14 @@
       </div>
       <span class="link-card-arrow">→</span>
     </a>
+    <a class="link-card tool-bflix" href="https://isaxd183.github.io/Bflix-plugin-web/" target="_blank" rel="noopener">
+      <div class="link-card-icon" style="color:var(--accent1);font-size:.9rem;">WEB</div>
+      <div class="link-card-info">
+        <div class="link-card-title">Bflix Web</div>
+        <div class="link-card-sub">isaxd183.github.io</div>
+      </div>
+      <span class="link-card-arrow">→</span>
+    </a>
   </div>
 </section>
 <div class="divider"></div>
@@ -383,7 +391,7 @@
   <div class="link-grid anim anim-4">
     <a class="link-card social-fb" href="https://facebook.com/groups/1332249131022291/" target="_blank" rel="noopener">
       <div class="link-card-icon">
-        <img src="https://www.citypng.com/public/uploads/preview/outline-round-facebook-fb-icon-logo-701751695134773jn1popsjn6.png" alt="Facebook" loading="lazy" width="50" height="50"/>
+        <img src="https://www.citypng.com/public/uploads/preview/outline-round-facebook-fb-icon-logo-701751695134773jn1popsjn6.png" alt="Facebook" loading="lazy" width="50" height="50">
       </div>
       <div class="link-card-info">
         <div class="link-card-title">Grupo de Facebook</div>
@@ -527,5 +535,6 @@ window.addEventListener('scroll',function(){
   if(!rafPending){ rafPending=true; requestAnimationFrame(updateNav); }
 },{passive:true});
 </script>
+
+  
 </body>
-  </html>
